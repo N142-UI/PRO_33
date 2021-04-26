@@ -3,7 +3,6 @@ const World = Matter.World;
 const Bodies =  Matter.Bodies;
 const Constraint = Matter.Constraint;
 var bg,ground,gimg;
-var runner,runnerImg;
 var ice=[];
 var maxSnow=100;
 
@@ -38,7 +37,7 @@ function draw() {
   background(bg);  
   Engine.update(engine);
 
-  runner.collide(ground);
+  
 
   for(var i = 0;i < maxSnow; i++){
     ice[i].display();
